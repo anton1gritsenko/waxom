@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.hero-slider').slick({
         dots: true,
+        arrows:false,
 });
 
     $('.slider').slick({
@@ -17,5 +18,9 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3
     });
+
+$('.toggle-menu').on('click', function(){
+    $('.main-menu').stop().slideToggle();
+});
 
 });

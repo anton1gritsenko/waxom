@@ -58,6 +58,9 @@ header {
     width: 100%;
 
 }
+.logo img{
+    max-width: 100%;
+}
 
 nav {
     display: inline-block;
@@ -85,6 +88,23 @@ nav a:hover {
     border: none;
     padding: 0 10px;
 
+}
+.toggle-menu span {
+    display: none;
+    margin-top: 6px;
+    height: 2px;
+    width: 30px;
+    background: #fff;
+}
+.toggle-menu{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 9;
+    /*transform: translate(-50%);*/
+}
+.main-menu{
+    display: block;
 }
 
 .slider-text {
@@ -771,38 +791,42 @@ li.arrow:before{
     justify-content: center;
 }
 .barber{
-    width: 283px;
+    /*width: 283px;*/
+    width: 25%;
 }
 .delicious{
-    width: 283px;
+   /* width: 283px;*/
+    width: 25%;
 }
 .designers{
-    width: 283px;
+    /*width: 283px;*/
+    width: 25%;
 }
 .cafe{
-    width: 283px;
+    /*width: 283px;*/
+    width: 25%;
 }
 
 .footer{
     background:#191919;
-    height: 36em;
+   /* height: 36em;*/
 }
 .posts-block p{
     border-bottom: 1px solid #252525;
     padding: 10px 0;
 }
-.logo img{
+.logo-footer img{
 
     padding: 45px 0px;
 }
-.logo p{
+.logo-footer p{
     color: #555555;
     font-family: 'Montserrat-Regular';
     font-size: 14px;
     font-weight: 300;
     width: 86%;
 }
-.logo a{
+.logo-footer a{
     color: #d1d1d1;
     font-family: 'Montserrat-Regular';
     font-size: 14px;
@@ -923,4 +947,177 @@ li.arrow:before{
 }
 .wax-color{
     color: #959595!important;
+}
+                            /*Responsive*/
+@media screen and (max-width: 1200px) {
+    .latest-projects p{
+    width: 100%;
+        transform: none;
+    }
+    .text-part p{
+        width: 100%;
+        transform: none;
+    }
+    .slider__item.slick-slide img{
+
+        width: 100%;
+
+        /* margin-top: 40px; */
+        /* transform: scale(1.2); */
+    }
+    .slider__item.slick-slide{
+        visibility: hidden;
+    }
+    .slider__item.slick-slide.slick-current.slick-active.slick-center img{
+        visibility: visible;
+        width: 228%;
+    }
+    .photo-slider{
+        width: 100%;
+    }
+    .slick-prev {
+        left: 45% !important;
+    }
+}
+@media screen and (max-width: 992px) {
+    .toggle-menu span {
+        display: block;
+
+    }
+
+    .main-menu {
+        display: none;
+        /*position: absolute;*/
+        /*left: 23%;*/
+        text-align: right;
+
+    }
+
+    .nav-menu-stl button {
+        display: table;
+        padding: 10px 10px;
+
+    }
+
+    .slider-text h2 {
+        font-size: 25px;
+    }
+
+    .slider-text h1 {
+        font-size: 30px;
+    }
+
+    .slider-text p {
+        font-size: 13px;
+    }
+
+    .list-inline li {
+        width: 100%;
+    }
+
+    .slider-text button {
+        width: 160px;
+        height: 41px;
+        font-size: 12px;
+    }
+
+    .service-text {
+        padding: 13px 0;
+        height: 231px;
+    }
+    .text-realisation h1{
+        font-size: 25px;
+    }
+    .text-realisation p{
+        transform: translate(51%, 61%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slick-dots {
+       visibility: hidden;
+
+    }
+    .service-text:after{
+        visibility: hidden;
+    }
+    .slider__item.slick-slide.slick-current.slick-active.slick-center img{
+        visibility: hidden;
+        width: 228%;
+    }
+    .wordpress-theme h2{
+        font-size: 22px;
+    }
+    .wordpress-theme p{
+        font-size: 14px;
+    }
+
+    .wordpress-theme button{
+        width: 160px;
+        height: 41px;
+        font-size: 12px;
+    }
+    .btn-btn-default.button-picture-row{
+        width: 160px;
+        height: 41px;
+        font-size: 12px;
+    }
+    .player-text span{
+        display: none;
+    }
+    .play-button{
+        top: 27%;
+    }
+    .play-button img{
+        width: 64%;
+
+    }
+    .player-text h1{
+        font-size: 21px;
+    }
+    .player-text {
+        top: 61%
+    }
+    .hand-text h1{
+        font-size: 26px;
+    }
+    .hand-text p{
+        font-size: 14px;
+    }
+
+
+
+}
+@media screen and (max-width: 648px) {
+    .slider-text h2{
+        display: none;
+    }
+    .play-button img{
+        width: 50%;
+    }
+    .player-text p{
+        display: none;
+    }
+    .photo-hand img{
+        width: 90%;
+    }
+    .hand-text h1{
+        font-size: 22px;
+    }
+    .hand-text p{
+font-size: 12px;
+    }
+    .arrow span{
+        font-size: 12px;
+    }
+    .icons-count h1{
+        font-size: 25px;
+    }
+    .text-part h1{
+        font-size: 25px;
+    }
+    .text-part p{
+        font-size: 14px;
+    }
+
 }
