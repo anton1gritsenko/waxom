@@ -268,7 +268,7 @@ nav a:hover {
 }*/
 .slider__item.slick-slide.slick-current.slick-active.slick-center img{
     position: absolute;
-    width: 130%;
+    width: 98%;
     margin-top: 0;
    /*margin-top: 40px;*/
     /*transform: scale(1.2);*/
@@ -989,7 +989,8 @@ li.arrow:before{
     }
     .slider__item.slick-slide.slick-current.slick-active.slick-center img{
         visibility: visible;
-        width: 228%;
+        width: 98%;
+
     }
     .photo-slider{
         width: 100%;
@@ -1051,6 +1052,15 @@ li.arrow:before{
     .text-realisation p{
         transform: translate(51%, 61%);
     }
+    .play-button{
+        top: 37%;
+    }
+    .player-text{
+        top: 64%;
+    }
+    .play-button img {
+        width: 74%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1064,6 +1074,7 @@ li.arrow:before{
     .slider__item.slick-slide.slick-current.slick-active.slick-center img{
         visibility: hidden;
         width: 228%;
+
     }
     .wordpress-theme h2{
         font-size: 22px;
@@ -1178,6 +1189,7 @@ font-size: 12px;
     }
     .designers-names {
         margin-top: 47.5px;
+        text-align: end;
     }
     .designers-names span{
         font-size: 12px;
@@ -1185,6 +1197,18 @@ font-size: 12px;
 
 }
 @media screen and (max-width: 480px) {
+    .hero-slide img{
+        height: 300px;
+    }
+    .slider-text h1{
+        font-size: 24px;
+    }
+    .wordpress-theme{
+        height: 170px;
+    }
+    .wordpress-theme button{
+        width: 126px;
+    }
     .icons-count h1{
         font-size: 19px;
 
@@ -1207,5 +1231,113 @@ font-size: 12px;
     .launched img{
         width: 42%;
     }
+    .copiring{
+        height: 126px;
+    }
 
 }
+@media screen and (max-width: 410px) {
+    .services-block img{
+        width: 22%;
+    }
+    .picture-row img{
+        width: 320px;
+        margin-top: 15px;
+    }
+    .text-background{
+        width: 320px;
+    }
+    .logo-footer img{
+        width: 80%;
+    }
+    .list-devices{
+        display: none;
+    }
+}
+@media screen and (max-width: 340px) {
+    .slider-text h1 {
+        font-size: 22px;
+    }
+    .slider-text p {
+        font-size: 11px;
+    }
+    .slider-text button {
+        width: 143px;
+        height: 36px;
+        font-size: 11px;
+    }
+    .toggle-menu span{
+        width: 23px;
+    }
+    .service-text h3{
+        font-size: 17px;
+    }
+    .service-text p {
+        font-size: 13px;
+    }
+    .text-realisation h1 {
+        font-size: 22px;
+    }
+    .picture-row img {
+        width: 290px;
+    }
+    .text-background{
+        width: 290px;
+    }
+    .wordpress-theme {
+        height: 209px;
+    }
+    .latest-projects h2{
+        font-size: 24px;
+    }
+    .latest-projects p{
+
+        font-size: 12px;
+    }
+    .btn.btn-primary{
+        font-size: 11px;
+    }
+    .wordpress-theme{
+        margin-top: 22px;
+    }
+    .play-button{
+        transform: translate(-29%, -50%);
+    }
+    .play-button img{
+        width: 58%;
+    }
+    .text-part p{
+        font-size: 13px;
+    }
+    .logo-footer p{
+        font-size: 13px;
+    }
+    .posts-block p{
+        font-size: 13px;
+    }
+    .posts-block h1{
+        font-size: 22px;
+    }
+    .twitter-block h1{
+        font-size: 22px;
+    }
+    .widgets h1{
+        font-size: 22px;
+    }
+    .twitter-block p{
+        font-size: 13px;
+    }
+    .twitter-block h6{
+        font-size: 11px;
+    }
+    .copiring {
+        height: 143px;
+    }
+    .designers-names span {
+        font-size: 11px;
+    }
+    .widgets img{
+        width: 105%;
+    }
+}
+
