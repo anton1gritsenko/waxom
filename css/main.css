@@ -790,21 +790,21 @@ li.arrow:before{
     align-items: center;
     justify-content: center;
 }
-.barber{
+.barber img{
     /*width: 283px;*/
-    width: 25%;
+    width: 75%;
 }
-.delicious{
+.delicious img{
    /* width: 283px;*/
-    width: 25%;
+    width: 75%;
 }
-.designers{
+.designers img{
     /*width: 283px;*/
-    width: 25%;
+    width: 75%;
 }
-.cafe{
+.cafe img{
     /*width: 283px;*/
-    width: 25%;
+    width: 75%;
 }
 
 .footer{
@@ -906,10 +906,10 @@ li.arrow:before{
 
 }
 .categories{
-    display: flex;
+   /* display: flex;
     justify-content: left;
     align-items: center;
-    height: 100%;
+    height: 100%;*/
     margin-top: 37.5px;
 
 }
@@ -948,8 +948,27 @@ li.arrow:before{
 .wax-color{
     color: #959595!important;
 }
+
+.slick-list{
+    padding: 0 0!important;
+}
                             /*Responsive*/
 @media screen and (max-width: 1200px) {
+
+    .slider__item.slick-slide.slick-current.slick-active.slick-center img{
+        position: absolute;
+        width: 0;
+        margin-top: 0;
+        /*margin-top: 40px;*/
+        /*transform: scale(1.2);*/
+    }
+    .slider__item.slick-slide{
+        margin-top: 40px;
+    }
+    .slider__item.slick-slide img{
+        /*transform: scale(1.2);*/
+        margin-top: 40px;
+    }
     .latest-projects p{
     width: 100%;
         transform: none;
@@ -978,6 +997,7 @@ li.arrow:before{
     .slick-prev {
         left: 45% !important;
     }
+
 }
 @media screen and (max-width: 992px) {
     .toggle-menu span {
@@ -1078,22 +1098,56 @@ li.arrow:before{
     .player-text {
         top: 61%
     }
+    .color-line-count{
+        height: 190px;
+    }
+    .brends-block{
+        height: 220px;
+    }
     .hand-text h1{
         font-size: 26px;
     }
     .hand-text p{
         font-size: 14px;
     }
+    .photo-slider{
+       visibility: hidden;
+    }
+    .recent-posts{
+        height: 140px;
+    }
+    .text-realisation {
+        height: 331px;
+    }
+    .second-part {
+        margin-left: 0px;
+    }
+    .categories span{
+        font-size: 12px;
+    }
+    .categories a{
+        font-size: 12px;
+    }
+
 
 
 
 }
 @media screen and (max-width: 648px) {
+    .nav-menu-stl{
+        margin-top: -17px;
+    }
+    .nav-menu-stl img{
+        width: 51%;
+    }
+    .nav-menu-stl button{
+        padding: 3px 10px;
+    }
     .slider-text h2{
         display: none;
     }
     .play-button img{
-        width: 50%;
+        width: 75%;
     }
     .player-text p{
         display: none;
@@ -1118,6 +1172,40 @@ font-size: 12px;
     }
     .text-part p{
         font-size: 14px;
+    }
+    .categories{
+        margin-top: 12.5px;
+    }
+    .designers-names {
+        margin-top: 47.5px;
+    }
+    .designers-names span{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .icons-count h1{
+        font-size: 19px;
+
+    }
+    .icons-count p{
+        font-size: 9px;
+    }
+    .guests img{
+        width: 32%;
+    }
+    .cups img{
+        width: 35%;
+    }
+    .messages img{
+        width: 35%;
+    }
+    .likes img{
+        width: 35%;
+    }
+    .launched img{
+        width: 42%;
     }
 
 }
